@@ -90,4 +90,4 @@ We may update this Privacy Policy from time to time. Material changes will be re
 
 If you have questions about this Privacy Policy or your data, contact us at:
 
-**otaks.support@gmail.com**
+**otask.support@gmail.com**

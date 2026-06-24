@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,28 +99,6 @@
             text-decoration: underline;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 16px 0;
-            font-size: 14px;
-        }
-
-        th {
-            text-align: left;
-            padding: 12px 16px;
-            background-color: #1c1c1e;
-            color: #f5f5f7;
-            font-weight: 600;
-            border-bottom: 1px solid #2c2c2e;
-        }
-
-        td {
-            padding: 12px 16px;
-            color: #a1a1a6;
-            border-bottom: 1px solid #1c1c1e;
-        }
-
         .contact {
             font-size: 16px;
             color: #48a3f7;
@@ -143,97 +122,117 @@
             margin-bottom: 12px;
             letter-spacing: 0.5px;
         }
+
+        .highlight-box {
+            background: #1c1c1e;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #a1a1a6;
+        }
+
+        .highlight-box strong {
+            display: block;
+            margin-bottom: 4px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <span class="app-badge">OTASK</span>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: February 27, 2026</p>
+        <p class="last-updated">Last updated: June 24, 2026</p>
 
-        <p>OTASK ("we," "our," or "the App") is a personal time management application designed to help you plan, track, and visualize your daily schedule. Your privacy is important to us. This Privacy Policy explains what information the App collects, how it is used, and the choices you have.</p>
+        <p>OTASK ("the App", "we", "us") is a personal time-management app built around a 24-hour visual planner. This
+            Privacy Policy explains what data the App handles and how. We designed OTASK to keep your data under your
+            control: there is no developer-run server, no advertising, and no third-party analytics or tracking.</p>
 
-        <h2>1. Information We Collect</h2>
-
-        <h3>1.1 Data You Create</h3>
-        <p>When you use OTASK, you create personal data including:</p>
+        <h2>1. Data You Create</h2>
+        <p>When you use OTASK, you create personal content, including:</p>
         <ul>
-            <li><strong>Tasks &amp; Reminders</strong> — titles, start/end times, completion status, and associated dates.</li>
-            <li><strong>Routines</strong> — recurring task templates with titles, times, and repeat schedules.</li>
-            <li><strong>Daily Notes</strong> — free-form text notes you write for each day.</li>
+            <li><strong>Tasks &amp; Reminders</strong> — titles, start/end times, completion status</li>
+            <li><strong>Routines</strong> — recurring task templates and their schedules</li>
+            <li><strong>Daily Notes</strong> — free-form text you write for a given day</li>
+            <li><strong>Preferences</strong> — settings such as language, appearance, notifications, and haptics</li>
         </ul>
-        <p><strong>All of this data is stored locally on your device.</strong> We do not transmit, upload, or have access to your tasks, routines, or notes.</p>
+        <p>We do <strong>not</strong> ask for your name, email, phone number, or account registration to use the App.</p>
 
-        <h3>1.2 Subscription Information</h3>
-        <p>OTASK uses <strong>RevenueCat</strong> (a third-party service) to manage in-app subscriptions. When you subscribe, RevenueCat processes the transaction through Apple's App Store. RevenueCat may collect:</p>
+        <h2>2. How Your Data Is Stored</h2>
+        <h3>2.1 On Your Device</h3>
+        <p>Your content is stored locally on your device using Apple's on-device database (SwiftData).</p>
+        <h3>2.2 iCloud / CloudKit Sync</h3>
+        <p>If you are signed in to iCloud, your tasks, routines, and daily notes are <strong>synchronized through Apple
+                iCloud (CloudKit)</strong> to your <strong>private iCloud account</strong> so that they stay up to date
+            across your own Apple devices and are backed up.</p>
         <ul>
-            <li>An anonymous user identifier (generated automatically; not linked to your name or email).</li>
-            <li>Purchase history and subscription status.</li>
-            <li>Device type, OS version, and app version (for diagnostics).</li>
+            <li>This data is stored in <strong>your</strong> private iCloud database, managed by Apple.</li>
+            <li><strong>The developer of OTASK cannot access, read, or retrieve this data</strong> — it never reaches any
+                server we operate.</li>
+            <li>Syncing is handled entirely by Apple's infrastructure and is governed by
+                <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy
+                    Policy</a>.</li>
         </ul>
-        <p>RevenueCat does <strong>not</strong> receive any of your task data, notes, or personal content. For more information, please refer to <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</p>
+        <p>If you do not wish to use iCloud sync, you can disable iCloud for OTASK in your device's
+            <strong>Settings → [Your Name] → iCloud</strong>.</p>
 
-        <h3>1.3 Notifications</h3>
-        <p>OTASK sends <strong>local notifications</strong> (task start, task end, daily summary) that are scheduled and delivered entirely on your device. No notification data is sent to any server.</p>
-
-        <h3>1.4 Information We Do NOT Collect</h3>
+        <h2>3. Subscriptions &amp; Purchases</h2>
+        <p>OTASK offers auto-renewable subscriptions (Monthly, Yearly) and a one-time Lifetime purchase. All payments are
+            processed by <strong>Apple</strong> through the App Store; we never see or store your payment information.</p>
+        <p>To manage subscriptions and validate purchases, we use <strong>RevenueCat, Inc.</strong> as our subscription
+            infrastructure provider. RevenueCat processes:</p>
         <ul>
-            <li>We do <strong>not</strong> require account creation, sign-in, or registration.</li>
-            <li>We do <strong>not</strong> collect your name, email address, phone number, or any personal identifiers.</li>
-            <li>We do <strong>not</strong> use analytics, tracking, or advertising SDKs.</li>
-            <li>We do <strong>not</strong> use cookies or similar tracking technologies.</li>
-            <li>We do <strong>not</strong> access your contacts, photos, camera, microphone, or location.</li>
+            <li>An <strong>anonymous app user identifier</strong> generated for your install</li>
+            <li><strong>Purchase and transaction history</strong> (which product you bought, trial status,
+                renewal/expiration dates)</li>
+            <li><strong>Device and platform information</strong> (e.g., country, OS version, app version)</li>
         </ul>
+        <p>This information is used solely to deliver and restore your subscription entitlement. RevenueCat does not
+            receive any of your tasks, notes, or routines. See
+            <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat's Privacy
+                Policy</a>.</p>
 
-        <h2>2. How We Use Information</h2>
+        <h2>4. Notifications</h2>
+        <p>OTASK can schedule <strong>local notifications</strong> (task start, task end, and a daily summary) directly
+            on your device. These are generated and delivered on-device; their content is not transmitted to us or any
+            third party.</p>
+
+        <h2>5. What We Do NOT Do</h2>
         <ul>
-            <li><strong>Local data</strong> (tasks, routines, notes) is used solely to provide the App's functionality on your device.</li>
-            <li><strong>Subscription data</strong> is used only to verify your subscription status and unlock premium features.</li>
-        </ul>
-
-        <h2>3. Data Storage &amp; Security</h2>
-        <ul>
-            <li>All task, routine, and note data is stored on-device using Apple's SwiftData framework.</li>
-            <li>Data stays on your device and is protected by your device's security features (passcode, Face ID, Touch ID).</li>
-            <li>We do not operate servers that store your personal content.</li>
-        </ul>
-
-        <h2>4. Third-Party Services</h2>
-        <p>The only third-party service used by OTASK is:</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Service</th>
-                    <th>Purpose</th>
-                    <th>Data Shared</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>RevenueCat</strong></td>
-                    <td>Subscription management</td>
-                    <td>Anonymous ID, purchase status, device info</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>We do not share your data with advertisers, data brokers, or any other third parties.</p>
-
-        <h2>5. Children's Privacy</h2>
-        <p>OTASK does not knowingly collect personal information from children under 13. The App does not require account creation and stores all data locally on the device.</p>
-
-        <h2>6. Your Rights &amp; Choices</h2>
-        <ul>
-            <li><strong>Delete your data</strong>: You can delete any task, routine, or note within the App at any time. Uninstalling the App removes all locally stored data.</li>
-            <li><strong>Manage notifications</strong>: You can enable or disable notifications in the App's settings or through iOS Settings.</li>
-            <li><strong>Manage your subscription</strong>: You can manage or cancel your subscription through your Apple ID account settings.</li>
+            <li>We do <strong>not</strong> run our own servers that collect your content.</li>
+            <li>We do <strong>not</strong> use third-party analytics, advertising, or tracking SDKs.</li>
+            <li>We do <strong>not</strong> sell, rent, or share your personal data.</li>
+            <li>We do <strong>not</strong> build advertising or marketing profiles about you.</li>
         </ul>
 
-        <h2>7. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top of this page reflects the most recent revision. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+        <h2>6. Children's Privacy</h2>
+        <p>OTASK does not knowingly collect personal information from children under 13. The App does not require an
+            account and does not gather identifying information. If you believe a child has provided personal data,
+            contact us and we will help address it.</p>
 
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-        <p class="contact">📧 support@otask.app</p>
+        <h2>7. Your Rights &amp; Data Deletion</h2>
+        <ul>
+            <li>You can <strong>delete</strong> any task, routine, or note within the App at any time.</li>
+            <li><strong>Settings → Data → Delete All Tasks</strong> removes all tasks across your devices via iCloud.</li>
+            <li><strong>Uninstalling</strong> the App removes all locally stored data on that device.</li>
+            <li>To remove iCloud-synced data, delete it in the App (which propagates to iCloud) or manage it via
+                <strong>Settings → [Your Name] → iCloud → Manage Account Storage</strong>.</li>
+            <li>You may request information about, or deletion of, any data associated with your use by contacting us at
+                the address below.</li>
+        </ul>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last
+            updated" date at the top of this document. Continued use of the App after changes take effect constitutes
+            acceptance of the revised policy.</p>
+
+        <div class="divider"></div>
+
+        <h2>9. Contact</h2>
+        <p>If you have questions about this Privacy Policy or your data, contact us at:</p>
+        <p class="contact">📧 <a href="mailto:otask.support@gmail.com">otask.support@gmail.com</a></p>
     </div>
 </body>
+
 </html>
